@@ -767,11 +767,17 @@
     footer {
       padding-bottom: 40px;
     }
-  }
+  } 
 
 
   @media screen and (max-width: 767px) {
-
+.service-bix {
+    width: 50%;
+    padding:15px;
+}
+.mrg {
+    margin: -15px;
+}
     .section-title {
       padding-bottom: 20px;
     }
