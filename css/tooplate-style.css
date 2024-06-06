@@ -775,6 +775,9 @@
     width: 50%;
     padding:15px;
 }
+.margin-top{
+  margin-top: 30px;
+}
 .mrg {
     margin: -15px;
 }
