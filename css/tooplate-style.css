@@ -685,7 +685,40 @@
     float: left;
     width: 100%;
 }
+ .service-box h3 {
+  margin-bottom: 40px;
+ }
+ .wordpress h3{
+    margin-bottom:20px;
+ }
 
+.wordpress{
+  float: left;
+    width: 100%;
+}
+.wp-bx:last-child{
+  padding-right: 0;
+}
+.wp-bx{
+
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.wp-bx a:first-child{
+  margin-top: 0;
+}
+.wp-bx a{
+  display: block;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 18px;
+}
+.wp-mrg{
+display: flex;
+justify-content: space-between;
+flex-flow: wrap;
+}
 .mrg{
   margin: -20px;
 }
