@@ -50,8 +50,32 @@
       });
     });  
 
-    // form 
+    // Get started form 
+    $('form#get-started').bind('submit',function(event){
+      event.preventDefault();
+        $.ajax({
+            type    : 'POST',
+            url     : 'sortForm.php',
+            data    : $(this).serialize(),
+            cache   : false,
+            dataType: 'text',
+            success : function (serverResponse) {  $('.sortForm #result').text(serverResponse); },
+            error   : function (jqXHR, textStatus, errorThrown) { $('.sortForm #errormsg').text('error sending mail'); }
+        });
+     }); 
 
-
+    // Say hello to us form 
+    $('form#contact-form').bind('submit',function(event){
+      event.preventDefault();
+        $.ajax({
+            type    : 'POST',
+            url     : 'invite.php',
+            data    : $(this).serialize(),
+            cache   : false,
+            dataType: 'text',
+            success : function (serverResponse) {  $('.mainform #result').text(serverResponse); },
+            error   : function (jqXHR, textStatus, errorThrown) { $('.mainform #errormsg').text('error sending mail'); }
+        });
+     }); 
 
 })(jQuery);
