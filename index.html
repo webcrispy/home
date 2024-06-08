@@ -214,10 +214,10 @@
                                    <input id="email" type="email" class="form-control" placeholder="Email address" name="email" required="">
                               </div>
                               <div class="col-md-4 col-sm-4">
-                                   <input id="phone" type="phone" class="form-control" placeholder="Phone No" name="Phone" required="">
+                                   <input id="phone" type="text" class="form-control" placeholder="Phone No" name="Phone" required="">
                               </div>
                               <div class="col-md-12 col-sm-12">
-                                   <textarea id="msg" class="form-control" rows="8" placeholder="Your message" name="message" required=""></textarea>
+                                   <textarea id="message" class="form-control" rows="8" placeholder="Your message" name="message" required=""></textarea>
                               </div>
                               <div class="col-md-4 col-sm-4">
                                    <input type="submit" id="contact-submit" class="form-control" name="send message" value="Send Message">
@@ -265,7 +265,9 @@
 <script type="text/javascript">
 function sendEmail(){
         Email.send({
-         SecureToken : "474f7-5118-4e34-8758-795112450ea0",
+         Host : "smtp.elasticemail.com",
+         Username : "webcrispy7@gmai.com",
+         Password : "FA80CE82FB376F69C0A7331629D50D0A219A",
          To : 'webcrispy7@gmail.com',
          From : document.getElementById("email").value,
          Subject : "inquiry",
