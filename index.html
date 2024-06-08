@@ -265,16 +265,16 @@
 <script type="text/javascript">
 function sendEmail(){
         Email.send({
-         Host : "smtp.elasticemail.com",
+         Host : "smtp.gmail.com",
          Username : "webcrispy7@gmail.com",
-         Password : "FA80CE82FB376F69C0A7331629D50D0A219A",
+         Password : "webcrispy@2525#",
          To : 'webcrispy7@gmail.com',
-         From : document.getElementbyid("email").value,
+         From : document.getElementById("email").value,
          Subject : "inquiry",
-         Body :"Name:" + document.getElementbyid("name").value
-               + "<br> Email:" + document.getElementbyid("mail").value
-               + "<br> Phone No:" + document.getElementbyid("phone").value
-               + "<br> Message:" + document.getElementbyid("message").value
+         Body :"Name:" + document.getElementById("name").value
+               + "<br> Email:" + document.getElementById("mail").value
+               + "<br> Phone No:" + document.getElementById("phone").value
+               + "<br> Message:" + document.getElementById("message").value
      }).then(
        message => alert("message sent succesfully")
      );  
