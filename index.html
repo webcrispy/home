@@ -201,7 +201,7 @@
                <div class="row mainform">
 
                     <div class="col-md-offset-1 col-md-10 col-sm-12">
-                         <form  id="contact-form"  onsubmit="sendemail(); reset(); return false;">
+                         <form  id="contact-form"  onsubmit="sendEmail(); reset(); return false;">
                                 
                               <div class="section-title">
                                    <h1>Say hello to us</h1>
@@ -263,17 +263,20 @@
 
 <script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
 <script type="text/javascript">
-function sendemail(){
+function sendEmail(){
         Email.send({
          Host : "smtp.elasticemail.com",
          Username : "webcrispy7@gmail.com",
          Password : "FA80CE82FB376F69C0A7331629D50D0A219A",
          To : 'webcrispy7@gmail.com',
-         From : document.getElementbyid("idname").value
+         From : document.getElementbyid("email").value,
          Subject : "inquiry",
-         Body : document.getElementbyid("idname").value
+         Body :"Name:" + document.getElementbyid("name").value
+               + "<br> Email:" + document.getElementbyid("mail").value
+               + "<br> Phone No:" + document.getElementbyid("phone").value
+               + "<br> Message:" + document.getElementbyid("message").value
      }).then(
-       message => alert(message)
+       message => alert("message sent succesfully")
      );  
 }
 </script>
