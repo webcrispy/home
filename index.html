@@ -64,12 +64,7 @@
                          <div class="home-info sortForm">
                               <h3>Get opportunity to be a</h3>
                               <h1>Front-End Developer </br> Join Us! </h1>
-                              <form action="sortForm.php" method="get" class="online-form" id="get-started">
-                                   <input type="email" name="email" class="form-control" placeholder="Enter your email" required="">
-                                   <button type="submit" class="form-control">Get started</button>
-                              </form>
-                              <div id="result"></div>
-                              <div id="errormsg"></div>
+                            
                          </div>
                     </div>
 
@@ -201,29 +196,12 @@
                <div class="row mainform">
 
                     <div class="col-md-offset-1 col-md-10 col-sm-12">
-                         <form  id="contact-form"  onsubmit="sendEmail(); reset(); return false;">
-                                
-                              <div class="section-title">
+                    <div class="section-title">
                                    <h1>Say hello to us</h1>
                               </div>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScv28yn7HuY9_yF4KyN_gbyKHp2J-3pgeZ4fsU7wVFBiZ7y_A/viewform?embedded=true" width="100%" height="1100" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
-                              <div class="col-md-4 col-sm-4">
-                                   <input id="name" type="text" class="form-control" placeholder="Full name" name="name" required="">
-                              </div>
-                              <div class="col-md-4 col-sm-4">
-                                   <input id="email" type="email" class="form-control" placeholder="Email address" name="email" required="">
-                              </div>
-                              <div class="col-md-4 col-sm-4">
-                                   <input id="phone" type="text" class="form-control" placeholder="Phone No" name="Phone" required="">
-                              </div>
-                              <div class="col-md-12 col-sm-12">
-                                   <textarea id="message" class="form-control" rows="8" placeholder="Your message" name="message" required=""></textarea>
-                              </div>
-                              <div class="col-md-4 col-sm-4">
-                                   <input type="submit" id="contact-submit" class="form-control" name="send message" value="Send Message">
-                              </div>
-                              
-                         </form>
+                         
                     </div>
 
                </div>
@@ -260,26 +238,6 @@
      <script src="js/owl.carousel.min.js"></script>
      <script src="js/smoothscroll.js"></script>
      <script src="js/custom.js"></script>
-
-<script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
-<script type="text/javascript">
-function sendEmail(){
-        Email.send({
-         Host : "smtp.gmail.com",
-         Username : "webcrispy7@gmail.com",
-         Password : "webcrispy@2525#",
-         To : 'hitesh.gabu@gmail.com',
-         From : document.getElementById("email").value,
-         Subject : "inquiry",
-         Body :"Name:" + document.getElementById("name").value
-               + "<br> Email:" + document.getElementById("email").value
-               + "<br> Phone No:" + document.getElementById("phone").value
-               + "<br> Message:" + document.getElementById("message").value
-     }).then(
-       message => alert("message sent succesfully")
-     );  
-}
-</script>
 
 
 

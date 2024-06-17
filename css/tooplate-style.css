@@ -748,7 +748,9 @@ flex-flow: wrap;
     font-style: normal;
 }
  
- 
+ #contact {
+padding-bottom: 0;
+ }
 
 
 
